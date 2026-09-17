@@ -7,7 +7,7 @@ body {
 	place-items: center;
 	font-family: system-ui, sans-serif;
 	color: #f8fafc;
-	background: linear-gradient(135deg, #7b94cf, #5c8ede);
+	background: linear-gradient(135deg, #a7e6ff, #5fdaff);
 }
 main { max-width: 680px; padding: 3rem 1.5rem; text-align: center; }
 h1 { margin-bottom: 1rem; font-size: clamp(2.5rem, 8vw, 5rem); }
