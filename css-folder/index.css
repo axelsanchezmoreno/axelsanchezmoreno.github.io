@@ -1,0 +1,17 @@
+body{
+    margin: 0;                              /* Removes default browser margin*/
+    min-height: 100vh;                      /* Makes the body fill the viewport height */
+    display: flex;                          /* Turns the body into a flex container */
+    justify-content: center;                /* Centers the box horizontally */
+	align-items: center;                    /* Cetners the box vertically */
+    font-family: sans-serif;                /* Sets the font to sans-serif */
+    background-color: rgb(163, 163, 242);  /* Color initialization */
+}
+
+.centered-box{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgb(163, 163, 242);
+}
