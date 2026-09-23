@@ -1,17 +1,46 @@
 body{
-    margin: 0;                              /* Removes default browser margin*/
-    min-height: 100vh;                      /* Makes the body fill the viewport height */
-    display: flex;                          /* Turns the body into a flex container */
-    justify-content: center;                /* Centers the box horizontally */
-	align-items: center;                    /* Cetners the box vertically */
-    font-family: sans-serif;                /* Sets the font to sans-serif */
-    background-color: rgb(163, 163, 242);  /* Color initialization */
+    margin: 0;                                                                 /* Removes default browser margin */
+    min-height: 100vh;                                                         /* Makes the page fill the viewport height */
+    display: flex;                                                             /* Turns the body into a flex container */
+    justify-content: center;                                                   /* Centers the box horizontally */
+    align-items: center;                                                       /* Centers the box vertically */
+    padding: 1.5em;                                                            /* Adds space around the content on small screens */
+    box-sizing: border-box;                                                    /* Includes padding in the body's dimensions */
+    font-family: sans-serif;                                                    /* Sets the font to sans-serif */
+    background: linear-gradient(135deg, rgb(207, 207, 254), rgb(146, 255, 255), rgb(130, 130, 239)); /* Creates a bright colorful background */
 }
 
 .centered-box{
-    width: 300px;
-    height: 200px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgb(163, 163, 242);
+    width: 17em;
+    height: 28em;
+    padding: 2em;                                                                       /* Creates breathing room around the content */
+    box-sizing: border-box;                                                             /* Keeps padding inside the set dimensions */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(145deg, rgb(255, 255, 255), rgb(190, 255, 255));    /* Makes the card stand out */
+    border-radius: 0.5em;                                                               /* Adds a crisp highlight around the card */
+    border: 0.125em solid rgb(255 255 255 / 75%);                                     /* Makes the card pop */
+    box-shadow: 0 1em 2em rgb(1 1 2 / 35%), 0 0 1.5em rgb(255 255 255 / 65%);       /* Brings the content into focus when it appears */
+    animation: card-pop 0.7s ease-out both;
 }
+
+h1 {
+    margin: 0 0 0.5em;
+    color: rgb(45, 45, 100);
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    color: rgb(55, 55, 80);
+    line-height: 1.5;
+    text-align: center;
+}
+
+@keyframes card-pop {
+    from { opacity: 0; transform: scale(0.9); }                                /* Starts the card slightly smaller and hidden */
+    to { opacity: 1; transform: scale(1); }                                    /* Finishes at its normal visible size */
+}
+
