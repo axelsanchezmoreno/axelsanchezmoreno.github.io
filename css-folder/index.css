@@ -27,6 +27,11 @@ body{
     animation: card-pop 0.7s ease-out both;
 }
 
+.box-container {
+    display: flex;
+    gap: 10em;
+}
+
 .portrait-box{
     width: 22em;
     height: 16em;
@@ -131,14 +136,19 @@ p {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1em;
-    width: 100%;
+    gap: 0.75em 2em;
+    max-width: 100%;
     margin-bottom: 1.5em;
-    padding: 0.75em 1em;
+    padding: 1em;
     box-sizing: border-box;
     background: rgb(255 255 255 / 70%);
     border-radius: 0.5em;
